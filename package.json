@@ -2,11 +2,26 @@
   "name": "node_f8",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect ./src/index.js localhost 8080",
+    "watch": "sass  --watch src/resources/scss:src/public/css/",
+    "pm2": "pm2 start  ./src/index.js",
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "jquery": "^3.7.1",
+    "pm2": "^5.3.0",
+    "sass": "^1.66.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  }
 }

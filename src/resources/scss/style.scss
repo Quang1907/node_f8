@@ -1,0 +1,10 @@
+@import "variables";
+.title {
+  color: white;
+  .background {
+    background: $blue-color;
+    .f {
+      color: red;
+    }
+  }
+}
